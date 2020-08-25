@@ -120,6 +120,8 @@ int main (int argc, char **argv, char **envp)
    fila0 = NULL ;
    for (i=0; i<N; i++)
    {
+      // printf ("i = %d\n", i);
+      // printf ("s = %d\n", queue_size ((queue_t*) fila0));
       assert (queue_size ((queue_t*) fila0) == i) ;
       queue_append ((queue_t **) &fila0, (queue_t*) &item[i]) ;
       assert (fila_correta (fila0)) ;
@@ -127,7 +129,7 @@ int main (int argc, char **argv, char **envp)
 
    // Teste: contar o numero de elementos na fila e verificar a ordem
    // dos elementos inseridos
-   printf ("Testando tamanho da fila e ordem dos %d elementos...\n", N) ;
+   printf ("Testando tamanho da fila e ordem dos %d elementos...\n", N) ; 
    aux = fila0 ;
    i=0 ;
    do
@@ -141,7 +143,7 @@ int main (int argc, char **argv, char **envp)
 
    assert (queue_size ((queue_t*) fila0) == N) ;
 
-   printf ("Testes de insercao funcionaram!\n") ;
+   printf ("Testes de insercao funcionaram!\n") ; // OK
 
    // PARTE 2: queue_remove ====================================================
 
@@ -159,7 +161,7 @@ int main (int argc, char **argv, char **envp)
       i++ ;
    }
    assert (fila0 == NULL) ;             // fila deve estar vazia
-   printf ("Ok, apos %d remocoes a fila ficou vazia\n", N) ;
+   printf ("Ok, apos %d remocoes a fila ficou vazia\n", N) ; // OK
 
    // reconstroi fila de teste
    fila0 = NULL ;
