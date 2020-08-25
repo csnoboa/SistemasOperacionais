@@ -1,0 +1,30 @@
+Escalonadores
+
+FCFS: First Come First Served
+Algoritomo do R.U.
+Cooperativo: Quando a tarefa começa a executar, ela termina
+
+
+RR: Round-Robin (revezamento)
+cada tarefa corre um pouco e entrega a CPU para outra tarefa
+FCFS com quantum (quantidade de tempo maximo para cada tarefa)
+
+SJF: Shortest job first 
+Cooperativo: Quando a tarefa começa a executar, ela termina
+Problema: como prever a duração de uma tarefa?
+Pode ser usado com RR
+
+SRTF: Shortest Remaining Time First
+Prioridade para tarefas que faltam menos tempo para terminar
+Analise a cada entrada ou saida de tarefa
+versão preemptiva do SJF
+
+Escalonamento PRIOc
+com prioridade
+Cooperativo
+
+PRIOp
+prremptiva com prioridade
+
+
+prioridades dinamicas

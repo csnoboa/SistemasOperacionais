@@ -1,0 +1,21 @@
+Sistema monolitico: Nucleo(kernel) grande. 
+Vantagens: Desempenho, tamanho reduzido
+Desvantagens: Complexidade
+
+Risco: se algo interno tiver algum bug, pode danificar muito
+
+Sistema micronúcleo (microkernel): Núcleo reduzido
+Vantagens: estabilidade, modularidade
+Desvantagens: baixo desempenho
+
+Sistemas em camadas: Organizar o núcleo em camadas
+Vantagens: 
+Desvantagens:
+
+
+Sistemas híbridos: Maioria dos sistemas atuais
+
+
+Máquinas Virtuais:
+
+
