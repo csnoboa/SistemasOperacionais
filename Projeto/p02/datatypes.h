@@ -10,6 +10,8 @@
 // Estrutura que define uma tarefa
 typedef struct task_t
 {
+  struct task_t *prev, *next; 
+  int tid;
   // preencher quando necessário
 } task_t ;
 
